@@ -1,0 +1,51 @@
+.nav-bar {
+    color: white;
+    background-color: #41B3A3;
+    position: fixed;
+    height: 100%;
+    box-shadow: 1px 0 5px 0 grey;
+    width: 256px;
+    padding: 16px;
+}
+
+.nav-bar .nav-content {
+    position: relative;
+}
+
+.nav-bar .nav-content img {
+    width: calc(256px - 48px);
+    margin: 20px 20px 0;
+    border-radius: 50%;
+    border: white solid 4px;
+}
+
+.nav-bar .nav-content p {
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.nav-bar .nav-content div.line {
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.nav-bar .nav-content ul {
+    list-style: none;
+    margin: 20px 48px;
+    padding: 0;
+}
+
+.nav-bar .nav-content ul li {
+    margin: 16px auto;
+}
+
+.nav-bar .nav-content ul li:hover {
+    cursor: pointer;
+    color: #32322C;
+}
+
+.nav-bar .nav-content ul li.selected {
+    color: #32322C;
+}
