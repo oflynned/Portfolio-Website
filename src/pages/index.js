@@ -34,7 +34,7 @@ class Index extends Component {
                             <h1>Hi there, I'm Ed</h1>
                             <h2 className={"job-title"}>
                                 <span>I'm </span>
-                                <span><TextLoop delay={2000} children={jobTitles}/></span>
+                                <span><TextLoop interval={1500} children={jobTitles}/></span>
                             </h2>
 
                             <p>I've been working as a software engineer since 2015.</p>

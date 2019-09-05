@@ -11,6 +11,30 @@ import NavBar from "../components/nav/NavBar";
 
 import "./contact.css";
 
+const contactMethods = [
+    {
+        method: "Email",
+        icon: faEnvelopeOpen,
+        href: "mailto:oflynned@gmail.com",
+        target: null,
+        hrefAnchor: "oflynned@gmail.com"
+    },
+    {
+        method: "LinkedIn",
+        icon: faLinkedin,
+        href: "https://www.linkedin.com/in/edmond-o-flynn-41b06497",
+        target: "_blank",
+        hrefAnchor: "edmond-o-flynn"
+    },
+    {
+        method: "GitHub",
+        icon: faGithub,
+        href: "https://github.com/oflynned",
+        target: "_blank",
+        hrefAnchor: "oflynned"
+    }
+];
+
 class Contact extends Component {
     render() {
         return (
@@ -19,7 +43,7 @@ class Contact extends Component {
                     <title>Edmond O'Flynn | Software Engineer</title>/>
                 </Helmet>
 
-                <NavBar headings={headings} selectedIndex={4}/>
+                <NavBar headings={headings} selectedIndex={3}/>
 
                 <div className={"content"}>
                     <div className={"offset-page-content"}>
@@ -29,28 +53,17 @@ class Contact extends Component {
                                 if you have any ideas for how we could work together.</p>
 
                             <table>
-                                <tr>
-                                    <td>Email</td>
-                                    <td>
-                                        <FontAwesomeIcon icon={faEnvelopeOpen}/>
-                                        <a href={"mailto:oflynned@gmail.com"}>oflynned@gmail.com</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>LinkedIn</td>
-                                    <td>
-                                        <FontAwesomeIcon icon={faLinkedin}/>
-                                        <a href={"https://www.linkedin.com/in/edmond-o-flynn-41b06497"}
-                                           target={"_blank"}>edmond-o-flynn</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>GitHub</td>
-                                    <td>
-                                        <FontAwesomeIcon icon={faGithub}/>
-                                        <a href={"https://github.com/oflynned"} target={"_blank"}>oflynned</a>
-                                    </td>
-                                </tr>
+                                {
+                                    contactMethods.map(({method, icon, href, target, hrefAnchor}) => (
+                                        <tr>
+                                            <td>{method}</td>
+                                            <td>
+                                                <FontAwesomeIcon icon={icon}/>
+                                                <a href={href} target={target}>{hrefAnchor}</a>
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
                             </table>
                         </div>
                     </div>
