@@ -28,6 +28,7 @@ export const overview = [
     },
     {
         title: "Java, Android development, SQLite",
+        description: "Released a variety of apps both for fun and on a freelance basis. My work includes a diabetes app that was developed in two stages in order to receive exercise recommendations.",
         icons: [
             {
                 icon: faJava,
@@ -41,6 +42,7 @@ export const overview = [
     },
     {
         title: "Javascript, HTML, CSS",
+        description: "Implemented a series of projects pertaining to static web development for some clients. I managed the entire UI/UX process of design and research with a lean approach.",
         icons: [
             {
                 icon: faJs,
@@ -58,6 +60,7 @@ export const overview = [
     },
     {
         title: "Python, Flask, Ruby, Rails, MySQL",
+        description: "Used extensively to work on dashboard related features in past workplaces and toolchains for scripting and automating work.",
         icons: [
             {
                 icon: faPython,

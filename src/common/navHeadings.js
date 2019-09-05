@@ -8,10 +8,6 @@ const headings = [
         link: "/portfolio"
     },
     {
-        title: "My Offer",
-        link: "/offer"
-    },
-    {
         title: "My CV",
         link: "/cv.pdf"
     },
