@@ -1,0 +1,7 @@
+.card {
+    margin: 16px 0;
+}
+
+.card .card-content:nth-child(1) {
+    margin: 0 16px 0 0;
+}
