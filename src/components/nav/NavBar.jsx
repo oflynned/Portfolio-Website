@@ -1,22 +1,33 @@
 import React from "react"
+import {Link} from "gatsby";
 
 import "./navBar.css"
 
-const NavBar = ({headings, selectedIndex}) =>
+const NavBar = ({headings, selectedIndex, onClick}) =>
     <div className={"nav-bar"}>
         <div className={"nav-content"}>
-            <img src={require("../../assets/images/avatar.jpeg")}/>
-            <p>Hi, my name is Edmond and I'm a full-stack software engineer.</p>
-            <div className={"line"}/>
+            <div className={"avatar"}>
+                <img src={require("../../assets/images/avatar.jpeg")}/>
+            </div>
 
-            <ul>
-                {
-                    headings.map((heading, index) =>
-                        <li className={selectedIndex === index ? "selected" : "unselected"}>
-                            {heading}
-                        </li>)
-                }
-            </ul>
+            <div className={"person-details"}>
+                <h1><strong>Edmond O'Flynn</strong></h1>
+                <h2>Full-Stack Web Developer</h2>
+            </div>
+
+            <div className={"nav-links"}>
+                <ul>
+                    {
+                        headings.map(({title, link}, index) =>
+                            <li className={selectedIndex === index ? "selected" : "unselected"}>
+                                <Link to={link}>{title}{selectedIndex === index ? " >" : ""}</Link>
+                            </li>)
+                    }
+                </ul>
+            </div>
+
+            <div className={"social-links"}>
+            </div>
         </div>
     </div>
 
