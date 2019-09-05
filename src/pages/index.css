@@ -31,3 +31,52 @@ p {
 .index .content .content-inner {
     padding: 32px;
 }
+
+.index .content a {
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(145, 13, 13);
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid .col {
+    width: 33%;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        display: block;
+    }
+
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grid .col {
+        width: 50%;
+    }
+}
+
+.index svg {
+    font-size: 32px;
+}
+
+.index svg:nth-child(n+2) {
+    margin-left: 8px;
+}
+
+.index .col:nth-child(1),
+.index .col:nth-last-child(2) {
+    margin: 0;
+}

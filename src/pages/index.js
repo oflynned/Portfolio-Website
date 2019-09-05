@@ -1,20 +1,21 @@
 import React, {Component} from "react";
 import {Helmet} from "react-helmet";
+import {Link} from "gatsby";
 
 import headings from "../common/navHeadings";
+import {overview} from "../common/skills";
 
 import NavBar from "../components/nav/NavBar";
 import TextLoop from "react-text-loop";
 
 import "./index.css"
+import Card from "../components/layout/card";
 
 const jobTitles = [
     "a full-stack engineer.",
     "a React developer.",
     "a Node.js developer.",
-    "an Android developer.",
-    "a team lead.",
-    "your next hire."
+    "an Android developer."
 ];
 
 class Index extends Component {
@@ -43,25 +44,45 @@ class Index extends Component {
                             <p>I work mainly with Javascript with frameworks such as React.js and Node.js, but also have
                                 extensive experience with Ruby, Java and Python.</p>
 
-                            <p>My core development competencies:</p>
-                            <ul>
-                                <li>Writing clean code</li>
-                                <li>Test-driven development</li>
-                                <li>Continuous integration & delivery pipelines</li>
-                                <li>Code review</li>
-                                <li>Story/task estimation</li>
-                            </ul>
+                            <p>
+                                Check out my <a href={"/cv.pdf"} target={"_blank"}>resume</a> or
+                                in-depth project <Link to={"/portfolio"}>portfolio</Link> for more information.
+                            </p>
 
-                            <p>My core team lead/management competencies:</p>
-                            <ul>
-                                <li>Backlog grooming</li>
-                                <li>Leading project teams</li>
-                                <li>Team mentoring</li>
-                                <li>Sprint management</li>
-                                <li>Client requirement gathering</li>
-                            </ul>
+                            <div className={"grid"}>
+                                <div className={"col"}>
+                                    <p>My core development competencies:</p>
+                                    <ul>
+                                        <li>Writing clean code</li>
+                                        <li>Test-driven development</li>
+                                        <li>Continuous integration & delivery pipelines</li>
+                                        <li>Code review</li>
+                                        <li>Story/task estimation</li>
+                                    </ul>
+                                </div>
 
-                            <p>Check out my resume or in-depth project portfolio for more information.</p>
+                                <div className={"col"}>
+                                    <p>My core team lead/management competencies:</p>
+                                    <ul>
+                                        <li>Backlog grooming</li>
+                                        <li>Leading project teams</li>
+                                        <li>Team mentoring</li>
+                                        <li>Sprint management</li>
+                                        <li>Client requirement gathering</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2>Technologies Overview</h2>
+                            <div className={"grid"}>
+                                {
+                                    overview.map(({title, description, icons}) =>
+                                        <div className={"col"}>
+                                            <Card title={title} description={description} icons={icons}/>
+                                        </div>
+                                    )
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
