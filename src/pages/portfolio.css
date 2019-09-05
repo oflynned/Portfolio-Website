@@ -1,0 +1,31 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+}
+
+.portfolio .content h1,
+.portfolio .content h2 {
+    font-family: "Quicksand", "sans-serif";
+}
+
+.portfolio .content {
+    margin-left: calc(20% + 32px);
+    min-height: 100vh;
+}
+
+.portfolio .content .offset-page-content {
+    width: calc(80% - 32px);
+    margin: auto;
+}
+
+.portfolio .content .content-inner {
+    padding: 32px;
+}
