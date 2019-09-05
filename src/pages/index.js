@@ -1,12 +1,12 @@
-import React, {Component} from "react"
-import {Helmet} from "react-helmet"
-
-import "./index.css"
+import React, {Component} from "react";
+import {Helmet} from "react-helmet";
 
 import headings from "../common/navHeadings";
 
-import NavBar from "../components/nav/NavBar"
+import NavBar from "../components/nav/NavBar";
 import TextLoop from "react-text-loop";
+
+import "./index.css"
 
 const jobTitles = [
     "a full-stack engineer.",
