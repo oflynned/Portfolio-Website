@@ -6,7 +6,15 @@ import "./index.css"
 import headings from "../common/navHeadings";
 
 import NavBar from "../components/nav/NavBar"
-import Button from "../components/input/Button";
+import TextLoop from "react-text-loop";
+
+const jobTitles = [
+    "a full-stack engineer.",
+    "a React developer.",
+    "a Node.js developer.",
+    "an Android developer.",
+    "a team lead.",
+    "your next employee."];
 
 class Index extends Component {
     render() {
@@ -21,34 +29,35 @@ class Index extends Component {
                 <div className={"content"}>
                     <div className={"offset-page-content"}>
                         <div className={"content-inner"}>
-                            <h1>Edmond O'Flynn</h1>
-                            <h2>Full-Stack Software Engineer</h2>
-                            <p>
-                                I'm a software engineer specialised in frontend and backend development for
-                                complex, scalable web applications. I work mainly with Javascript with frameworks
-                                such
-                                as React.js and Node.js, but also have extensive experience with Ruby, Java and
-                                Python.
-                            </p>
+                            <h1>Hi there, I'm Ed</h1>
+                            <h2>I'm <span><TextLoop children={jobTitles}/></span></h2>
 
-                            <div className={"content-inner-actions"}>
-                                <Button label={"View my portfolio"}/>
-                                <Button label={"View my resume"}/>
-                            </div>
-                        </div>
+                            <p>I've been working as a software engineer since 2015.</p>
+                            <p>I have maintained, developed, and launched multiple projects from scratch.</p>
+                            <p>I am specialised in both frontend and backend development with complex, scalable web
+                                applications.</p>
+                            <p>I work mainly with Javascript with frameworks such as React.js and Node.js, but also have
+                                extensive experience with Ruby, Java and Python.</p>
 
-                        <div className={"content-inner"}>
-                            <h1>What I do</h1>
-                            <p>
-                                I have been developing software professionally since 2015 with startups and
-                                fully-fledged companies. Below is a quick overview of my main skillsets and some
-                                technologies I frequently use. Check out my resume or in-depth project portfolio for
-                                more information.
-                            </p>
-                        </div>
+                            <p>My core development competencies:</p>
+                            <ul>
+                                <li>Writing clean code</li>
+                                <li>Test-driven development</li>
+                                <li>Continuous integration & delivery pipelines</li>
+                                <li>Code review</li>
+                                <li>Story/task estimation</li>
+                            </ul>
 
-                        <div className={"content-inner"}>
-                            <h1>Interesting Projects</h1>
+                            <p>My core team lead/management competencies:</p>
+                            <ul>
+                                <li>Backlog grooming</li>
+                                <li>Leading project teams</li>
+                                <li>Team mentoring</li>
+                                <li>Sprint management</li>
+                                <li>Client requirement gathering</li>
+                            </ul>
+
+                            <p>Check out my resume or in-depth project portfolio for more information.</p>
                         </div>
                     </div>
                 </div>

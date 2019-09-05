@@ -1,6 +1,5 @@
 * {
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -9,8 +8,15 @@ body {
 }
 
 p {
-    margin: 0;
     padding: 0;
+}
+
+.index .content h1, .index .content h2, .index .content span * {
+    font-family: "Quicksand", "sans-serif";
+}
+
+.index .content span * {
+    padding-top: 2px;
 }
 
 .row {
@@ -22,33 +28,15 @@ p {
 }
 
 .index .content {
-    margin-left: calc(256px + 32px);
+    margin-left: 20%;
     min-height: 100vh;
 }
 
-.heading {
-    background: #FAFAFA;
-}
-
 .index .content .offset-page-content {
-    width: 1024px;
+    width: 80%;
     margin: auto;
 }
 
 .index .content .content-inner {
-    padding: 64px;
-}
-
-.index .content .content-inner-actions {
-    width: fit-content;
-    margin: 20px auto;
-}
-
-.index .content .text-header {
-    width: calc(100% / 2)
-}
-
-.placeholder {
-    height: 100%;
-    background-color: red;
+    padding: 32px;
 }
