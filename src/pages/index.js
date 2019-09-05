@@ -14,7 +14,8 @@ const jobTitles = [
     "a Node.js developer.",
     "an Android developer.",
     "a team lead.",
-    "your next employee."];
+    "your next hire."
+];
 
 class Index extends Component {
     render() {
@@ -30,7 +31,10 @@ class Index extends Component {
                     <div className={"offset-page-content"}>
                         <div className={"content-inner"}>
                             <h1>Hi there, I'm Ed</h1>
-                            <h2>I'm <span><TextLoop children={jobTitles}/></span></h2>
+                            <h2 className={"job-title"}>
+                                <span>I'm </span>
+                                <span><TextLoop delay={2000} children={jobTitles}/></span>
+                            </h2>
 
                             <p>I've been working as a software engineer since 2015.</p>
                             <p>I have maintained, developed, and launched multiple projects from scratch.</p>

@@ -11,29 +11,20 @@ p {
     padding: 0;
 }
 
-.index .content h1, .index .content h2, .index .content span * {
+.index .content h1,
+.index .content h2,
+.index .content span,
+.index .content span * {
     font-family: "Quicksand", "sans-serif";
 }
 
-.index .content span * {
-    padding-top: 2px;
-}
-
-.row {
-    display: flex;
-}
-
-.col {
-    flex: auto;
-}
-
 .index .content {
-    margin-left: 20%;
+    margin-left: calc(20% + 32px);
     min-height: 100vh;
 }
 
 .index .content .offset-page-content {
-    width: 80%;
+    width: calc(80% - 32px);
     margin: auto;
 }
 
