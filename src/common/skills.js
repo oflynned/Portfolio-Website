@@ -1,36 +1,68 @@
-export const languages = ["Javascript", "Java", "Python", "Ruby"];
+import {
+    faNpm,
+    faJs,
+    faNodeJs,
+    faReact,
+    faPython,
+    faJava,
+    faAndroid,
+    faHtml5,
+    faCss3Alt
+} from '@fortawesome/free-brands-svg-icons';
+
 export const overview = [
+
     {
-        title: "Javascript",
+        title: "Mongo, Express, React, Node.js",
+        description: "Extensive experience with the MERN stack. Implemented a variety of genres of projects in as an employee and as a contractor.",
         icons: [
             {
-                icon: "fa-js",
-                tint: "yellow"
+                icon: faReact,
+                tint: "#60DAFB"
+            },
+            {
+                icon: faNodeJs,
+                tint: "#8CC84A"
             }
         ]
     },
     {
-        title: "Node.js",
+        title: "Java, Android development, SQLite",
         icons: [
             {
-                icon: "fa-node-js",
-                tint: "green"
+                icon: faJava,
+                tint: "#F49013"
+            },
+            {
+                icon: faAndroid,
+                tint: "#7BC05B"
             }
         ]
     },
     {
-        title: "React.js",
+        title: "Javascript, HTML, CSS",
         icons: [
             {
-                icon: "fa-react",
-                tint: "blue"
+                icon: faJs,
+                tint: "#F0DB4F"
+            },
+            {
+                icon: faHtml5,
+                tint: "#DE4A25"
+            },
+            {
+                icon: faCss3Alt,
+                tint: "#3695D0"
             }
         ]
     },
     {
-        title: "CI/CD"
-    },
-    {
-        title: "Android development"
+        title: "Python, Flask, Ruby, Rails, MySQL",
+        icons: [
+            {
+                icon: faPython,
+                tint: "#4584B7"
+            }
+        ]
     }
 ];
