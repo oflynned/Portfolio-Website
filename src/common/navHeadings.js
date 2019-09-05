@@ -13,7 +13,7 @@ const headings = [
     },
     {
         title: "My CV",
-        link: "/cv"
+        link: "/cv.pdf"
     },
     {
         title: "Contact Me",
