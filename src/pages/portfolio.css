@@ -31,6 +31,7 @@ body .portfolio {
 }
 
 .portfolio .tag-filter ul {
+    margin: 32px 0;
     display: flex;
     list-style: none;
 }
@@ -54,12 +55,12 @@ body .portfolio {
     color: rgb(145, 13, 13);
 }
 
-.portfolio .tag-filter ul li.selected div.underline {
+.portfolio .tag-filter ul li.selected div.underline,
+.portfolio .tag-filter ul li:hover div.underline{
     color: rgb(145, 13, 13);
     background-color: rgb(145, 13, 13);
     height: 2px;
     margin: 4px auto;
-    width: 100%;
 }
 
 .portfolio .grid {

@@ -74,6 +74,9 @@ class Portfolio extends Component {
                     <div className={"offset-page-content"}>
                         <div className={"content-inner"}>
                             <h1>Portfolio</h1>
+                            <p>The following projects are any interesting items relevant to showcasing from both a
+                                freelance and personal project point of view. Click any item to learn more, and on the
+                                tabs to filter.</p>
                             <div className={"tag-filter"}>
                                 <ul>
                                     {
