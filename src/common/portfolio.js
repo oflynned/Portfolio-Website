@@ -47,6 +47,12 @@ const projects = [
         title: "Tearma",
         description: "Tearma is an Irish language dictionary app. It was created as a client for a man-in-the-middle service which converts HTML markup to JSON."
     },
+    {
+        disposition: "PERSONAL",
+        tags: ["Python"],
+        title: "Snapchat Filters",
+        description: "Open-source Git repository to mimic augmented reality filters seen in the popular app Snapchat using OpenCV and image processing techniques."
+    }
 ];
 
 export default projects;
