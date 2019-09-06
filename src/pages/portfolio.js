@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Helmet} from "react-helmet";
-import {Link} from "gatsby";
+import {Link, navigate} from "gatsby";
 
 import projects from "../common/portfolio"
 
@@ -62,7 +62,7 @@ class Portfolio extends Component {
     }
 
     render() {
-        const {redirecting, redirectTo, selectedTabIndex, tags, filteredProjects} = this.state;
+        const {selectedTabIndex, tags, filteredProjects} = this.state;
         return (
             <div className={"portfolio"}>
                 <Helmet>
@@ -99,13 +99,13 @@ class Portfolio extends Component {
                                     {
                                         filteredProjects.map(
                                             ({title, description, tags, disposition}) =>
-                                                <Link to={`/projects/${title.toLowerCase().replace(/ /g, "-")}`}>
-                                                    <ProjectCard key={title}
-                                                                 title={title}
-                                                                 description={description}
-                                                                 tags={tags}
-                                                                 disposition={disposition}/>
-                                                </Link>
+                                                <ProjectCard
+                                                    onClick={() => navigate(`/projects/${title.toLowerCase().replace(/ /g, "-")}`)}
+                                                    key={title}
+                                                    title={title}
+                                                    description={description}
+                                                    tags={tags}
+                                                    disposition={disposition}/>
                                         )
                                     }
                                 </FlipMove>
