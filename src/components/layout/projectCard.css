@@ -1,0 +1,25 @@
+.project-card {
+    display: flex;
+    min-height: 192px;
+    min-width: calc(50% - 48px);
+    height: 92px;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.025);
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1600px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+.project-card .card-image {
+    width: 33%;
+    height: 100%;
+    background-color: #009EDB;
+}
+
+.project-card .card-content {
+    margin: 16px;
+}
