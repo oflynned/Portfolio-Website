@@ -14,7 +14,7 @@ export const overview = [
 
     {
         title: "Mongo, Express, React, Node.js",
-        description: "Extensive experience with the MERN stack. Implemented a variety of genres of projects in as an employee and as a contractor.",
+        description: "Extensive experience with the MERN stack. Implemented a variety of projects in various genres as an employee and as a contractor.",
         icons: [
             {
                 icon: faReact,
@@ -28,7 +28,7 @@ export const overview = [
     },
     {
         title: "Java, Android development, SQLite",
-        description: "Released a variety of apps both for fun and on a freelance basis. My work includes a diabetes app that was developed in two stages in order to receive exercise recommendations.",
+        description: "Released a variety of apps both for fun and on a freelance basis. Some of my work includes a diabetes management app that was developed  to receive exercise recommendations.",
         icons: [
             {
                 icon: faJava,
