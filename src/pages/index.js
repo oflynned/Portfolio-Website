@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Helmet} from "react-helmet";
 import {Link} from "gatsby";
 
-import headings from "../common/navHeadings";
 import {overview} from "../common/skills";
 
 import NavBar from "../components/nav/NavBar";
@@ -26,7 +25,7 @@ class Index extends Component {
                     <title>Edmond O'Flynn | Software Engineer</title>/>
                 </Helmet>
 
-                <NavBar headings={headings} selectedIndex={0}/>
+                <NavBar selectedIndex={0}/>
 
                 <div className={"content"}>
                     <div className={"offset-page-content"}>

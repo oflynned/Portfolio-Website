@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import {Helmet} from "react-helmet";
 
-import headings from "../common/navHeadings";
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEnvelopeOpen} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
@@ -43,7 +41,7 @@ class Contact extends Component {
                     <title>Edmond O'Flynn | Software Engineer</title>/>
                 </Helmet>
 
-                <NavBar headings={headings} selectedIndex={3}/>
+                <NavBar selectedIndex={3}/>
 
                 <div className={"content"}>
                     <div className={"offset-page-content"}>
