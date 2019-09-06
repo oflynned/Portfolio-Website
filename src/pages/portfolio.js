@@ -1,36 +1,107 @@
 import React, {Component} from "react";
 import {Helmet} from "react-helmet";
 
-import headings from "../common/navHeadings";
+import projects from "../common/portfolio"
 
 import NavBar from "../components/nav/NavBar";
+import ProjectCard from "../components/layout/projectCard";
+
+import FlipMove from 'react-flip-move';
 
 import "./portfolio.css";
-
-const tabs = ["All"];
 
 class Portfolio extends Component {
     constructor() {
         super();
         this.state = {
-            selectedTabIndex: 0
+            selectedTabIndex: 0,
+            tags: [],
+            projects: [],
+            filteredProjects: []
         }
     }
 
+    componentDidMount() {
+        const sortedProjects = projects.sort((a, b) => a.title > b.title ? 1 : -1);
+        const tags = this.groomAvailableTags();
+        const allTagIndex = tags.indexOf("All");
+        this.setState({
+            projects: sortedProjects,
+            filteredProjects: sortedProjects,
+            tags: this.groomAvailableTags(),
+            selectedTabIndex: allTagIndex
+        });
+    }
+
+    onTagFilterClick(index) {
+        const {tags, selectedTabIndex} = this.state;
+        if (index !== selectedTabIndex) {
+            this.filterProjects(tags[index]);
+            this.setState({selectedTabIndex: index});
+        }
+    }
+
+    groomAvailableTags() {
+        let projectTags = new Set(["All"]);
+        projects.map(({tags}) => {
+            projectTags = new Set([...projectTags, ...tags]);
+        });
+
+        return [...projectTags].sort((a, b) => a.toUpperCase() > b.toUpperCase() ? 1 : -1);
+    }
+
+    filterProjects(tag = "All") {
+        const {projects} = this.state;
+        if (tag === "All") {
+            this.setState({filteredProjects: projects});
+            return;
+        }
+
+        this.setState({filteredProjects: projects.filter(({tags}) => tags.includes(tag))});
+    }
+
     render() {
+        const {selectedTabIndex, tags, filteredProjects} = this.state;
         return (
             <div className={"portfolio"}>
                 <Helmet>
                     <title>Edmond O'Flynn | Software Engineer</title>/>
                 </Helmet>
 
-                <NavBar headings={headings} selectedIndex={1}/>
+                <NavBar selectedIndex={1}/>
 
                 <div className={"content"}>
                     <div className={"offset-page-content"}>
                         <div className={"content-inner"}>
                             <h1>Portfolio</h1>
+                            <div className={"tag-filter"}>
+                                <ul>
+                                    {
+                                        tags.map((tag, index) =>
+                                            <li key={tag}
+                                                className={index === selectedTabIndex ? "selected" : "unselected"}
+                                                onClick={() => this.onTagFilterClick(index)}>
+                                                <p>
+                                                    {tag}
+                                                    <div className={"underline"}/>
+                                                </p>
+                                            </li>)
+                                    }
+                                </ul>
+                            </div>
 
+                            <div className={"projects-grid"}>
+                                <FlipMove className={"grid"}>
+                                    {
+                                        filteredProjects.map(({title, description, tags, disposition}) =>
+                                            <ProjectCard key={title}
+                                                         title={title}
+                                                         description={description}
+                                                         tags={tags}
+                                                         disposition={disposition}/>)
+                                    }
+                                </FlipMove>
+                            </div>
                         </div>
                     </div>
                 </div>

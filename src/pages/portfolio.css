@@ -2,12 +2,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body {
+body .portfolio {
     margin: 0;
     padding: 0;
 }
 
-p {
+.portfolio p {
     padding: 0;
 }
 
@@ -28,4 +28,49 @@ p {
 
 .portfolio .content .content-inner {
     padding: 32px;
+}
+
+.portfolio .tag-filter ul {
+    display: flex;
+    list-style: none;
+}
+
+.portfolio .tag-filter ul li {
+    text-align: center;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.portfolio .tag-filter ul li:hover {
+    cursor: pointer;
+}
+
+.portfolio .tag-filter ul li p {
+    margin: auto;
+    width: fit-content;
+}
+
+.portfolio .tag-filter ul li.selected p {
+    color: rgb(145, 13, 13);
+}
+
+.portfolio .tag-filter ul li.selected div.underline {
+    color: rgb(145, 13, 13);
+    background-color: rgb(145, 13, 13);
+    height: 2px;
+    margin: 4px auto;
+    width: 100%;
+}
+
+.portfolio .grid {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.portfolio .grid .project-card {
+    margin: 16px;
 }
