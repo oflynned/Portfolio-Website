@@ -75,3 +75,8 @@ body .portfolio {
 .portfolio .grid .project-card {
     margin: 16px;
 }
+
+.portfolio a {
+    text-decoration: none;
+    color: black;
+}
