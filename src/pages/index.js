@@ -48,20 +48,20 @@ class Index extends Component {
                                 in-depth project <Link to={"/portfolio"}>portfolio</Link> for more information.
                             </p>
 
-                            <div className={"grid"}>
+                            <div className={"grid competencies"}>
                                 <div className={"col"}>
                                     <p>My core development competencies:</p>
                                     <ul>
                                         <li>Writing clean code</li>
                                         <li>Test-driven development</li>
-                                        <li>Continuous integration & delivery pipelines</li>
+                                        <li>Continuous integration/delivery</li>
                                         <li>Code review</li>
                                         <li>Story/task estimation</li>
                                     </ul>
                                 </div>
 
                                 <div className={"col"}>
-                                    <p>My core team lead/management competencies:</p>
+                                    <p>My core management competencies:</p>
                                     <ul>
                                         <li>Backlog grooming</li>
                                         <li>Leading project teams</li>

@@ -43,6 +43,10 @@ p {
     justify-content: space-between;
 }
 
+.grid.competencies .col {
+    width: 50%;
+}
+
 .grid .col {
     width: 33%;
 }
