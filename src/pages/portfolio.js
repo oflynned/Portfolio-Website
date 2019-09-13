@@ -99,7 +99,7 @@ class Portfolio extends Component {
                                         filteredProjects.map(
                                             ({title, description, tags, disposition}) =>
                                                 <ProjectCard
-                                                    onClick={() => navigate(`/projects/${title.toLowerCase().replace(/ /g, "-")}`)}
+                                                    onClick={() => navigate(`/portfolio/${title.toLowerCase().replace(/ /g, "-")}`)}
                                                     key={title}
                                                     title={title}
                                                     description={description}

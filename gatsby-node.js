@@ -8,7 +8,7 @@ exports.createPages = ({actions}) => {
         projects.forEach(project => {
             const title = project.title.toLowerCase().replace(" ", "-");
             createPage({
-                path: `/projects/${title}`,
+                path: `/portfolio/${title}`,
                 component: template,
                 context: {
                     project
