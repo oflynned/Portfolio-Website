@@ -11,7 +11,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 export const overview = [
-
     {
         title: "Mongo, Express, React, Node.js",
         description: "Extensive experience with the MERN stack. Implemented a variety of projects in various genres as an employee and as a contractor.",
