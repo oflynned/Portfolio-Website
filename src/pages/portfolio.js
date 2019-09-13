@@ -1,9 +1,8 @@
 import React, {Component} from "react";
 import {Helmet} from "react-helmet";
-import {Link, navigate} from "gatsby";
+import {navigate} from "gatsby";
 
 import projects from "../common/portfolio"
-
 import NavBar from "../components/nav/NavBar";
 import ProjectCard from "../components/layout/projectCard";
 

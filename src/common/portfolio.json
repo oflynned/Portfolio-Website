@@ -1,58 +1,87 @@
-const projects = [
-    {
-        disposition: "FREELANCE",
-        tags: ["Node.js", "React", "Android", "API"],
-        title: "GreenFi",
-        description: "GreenFi is a platform for community loan management in rural communities with the aim of utilitising the idea of eco-credit for environmental restoration."
-    },
-    {
-        disposition: "FREELANCE",
-        tags: ["Node.js", "React", "API"],
-        title: "Hairdressers Connect",
-        description: "Hairdressers Connect is a web-app network for stylists. It allows users to connect with one another, create a virtual CV and view portfolio items via Instagram."
-    },
-    {
-        disposition: "FREELANCE",
-        tags: ["Python", "Node.js", "Android", "iOS", "API"],
-        title: "T1Exercise",
-        description: "T1Exercise is a mobile application for managing diabetes blood sugar levels with exercise recommendations in order to encourage safe and empowering exercise."
-    },
-    {
-        disposition: "PERSONAL",
-        tags: ["Android", "Python", "API"],
-        title: "Loinnir",
-        description: "Loinnir is an Irish-language social network. It uses location-based services to match-make users into communities and provide discussion topics"
-    },
-    {
-        disposition: "PERSONAL",
-        tags: ["React"],
-        title: "Wedder",
-        description: "Wedder is a small React app to provide updates on a location's weather forecast in a humorous manner using Irish colloquialisms."
-    },
-    {
-        disposition: "PERSONAL",
-        tags: ["React"],
-        title: "Insurance Web App",
-        description: "This is a simple React desktop-based exercise I had to make for a job interview. It turned out pretty fluid and shows some basic functions for a client."
-    },
-    {
-        disposition: "PERSONAL",
-        tags: ["Android"],
-        title: "Irish Nouns",
-        description: "Irish Nouns is an Irish language game app. It gives the user a choice of topic, and presents words for the user to guess the gender while keeping a score."
-    },
-    {
-        disposition: "PERSONAL",
-        tags: ["Android", "Node.js", "API"],
-        title: "Tearma",
-        description: "Tearma is an Irish language dictionary app. It was created as a client for a man-in-the-middle service which converts HTML markup to JSON."
-    },
-    {
-        disposition: "PERSONAL",
-        tags: ["Python"],
-        title: "Snapchat Filters",
-        description: "Open-source Git repository to mimic augmented reality filters seen in the popular app Snapchat using OpenCV and image processing techniques."
-    }
-];
-
-export default projects;
+[
+  {
+    "disposition": "FREELANCE",
+    "tags": [
+      "Node.js",
+      "React",
+      "Android",
+      "API"
+    ],
+    "title": "GreenFi",
+    "description": "GreenFi is a platform for community loan management in rural communities with the aim of utilitising the idea of eco-credit for environmental restoration."
+  },
+  {
+    "disposition": "FREELANCE",
+    "tags": [
+      "Node.js",
+      "React",
+      "API"
+    ],
+    "title": "Hairdressers Connect",
+    "description": "Hairdressers Connect is a web-app network for stylists. It allows users to connect with one another, create a virtual CV and view portfolio items via Instagram."
+  },
+  {
+    "disposition": "FREELANCE",
+    "tags": [
+      "Python",
+      "Node.js",
+      "Android",
+      "iOS",
+      "API"
+    ],
+    "title": "T1Exercise",
+    "description": "T1Exercise is a mobile application for managing diabetes blood sugar levels with exercise recommendations in order to encourage safe and empowering exercise."
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Android",
+      "Python",
+      "API"
+    ],
+    "title": "Loinnir",
+    "description": "Loinnir is an Irish-language social network. It uses location-based services to match-make users into communities and provide discussion topics"
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "React"
+    ],
+    "title": "Wedder",
+    "description": "Wedder is a small React app to provide updates on a location's weather forecast in a humorous manner using Irish colloquialisms."
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "React"
+    ],
+    "title": "Insurance Web App",
+    "description": "This is a simple React desktop-based exercise I had to make for a job interview. It turned out pretty fluid and shows some basic functions for a client."
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Android"
+    ],
+    "title": "Irish Nouns",
+    "description": "Irish Nouns is an Irish language game app. It gives the user a choice of topic, and presents words for the user to guess the gender while keeping a score."
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Android",
+      "Node.js",
+      "API"
+    ],
+    "title": "Tearma",
+    "description": "Tearma is an Irish language dictionary app. It was created as a client for a man-in-the-middle service which converts HTML markup to JSON."
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Python"
+    ],
+    "title": "Snapchat Filters",
+    "description": "Open-source Git repository to mimic augmented reality filters seen in the popular app Snapchat using OpenCV and image processing techniques."
+  }
+]
