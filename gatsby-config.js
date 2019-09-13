@@ -4,28 +4,22 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-require("dotenv").config({path: ".env"})
-
-const faviconConfig = {
-    resolve: "gatsby-plugin-favicon",
-    options: {
-        logo: "./src/assets/images/favicon.png",
-    },
-}
-
-const fontLoaderConfig = {
-    resolve: "gatsby-plugin-web-font-loader",
-    options: {
-        google: {
-            families: ["Roboto", "Quicksand", "Open Sans"],
-        },
-    },
-}
-
 module.exports = {
     plugins: [
-        fontLoaderConfig,
-        faviconConfig,
+        {
+            resolve: "gatsby-plugin-web-font-loader",
+            options: {
+                google: {
+                    families: ["Roboto", "Quicksand", "Open Sans"],
+                },
+            },
+        },
+        {
+            resolve: "gatsby-plugin-favicon",
+            options: {
+                logo: "./src/assets/images/favicon.png",
+            },
+        },
         "gatsby-plugin-react-helmet",
-    ],
-}
+    ]
+};
