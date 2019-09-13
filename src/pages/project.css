@@ -1,3 +1,31 @@
-.project {
+* {
+    font-family: "Open Sans", sans-serif;
+}
 
+body .project {
+    margin: 0;
+    padding: 0;
+}
+
+.project p {
+    padding: 0;
+}
+
+.project .content h1,
+.project .content h2 {
+    font-family: "Quicksand", "sans-serif";
+}
+
+.project .content {
+    margin-left: calc(20% + 32px);
+    min-height: 100vh;
+}
+
+.project .content .offset-page-content {
+    width: calc(80% - 32px);
+    margin: auto;
+}
+
+.project .content .content-inner {
+    padding: 32px;
 }
