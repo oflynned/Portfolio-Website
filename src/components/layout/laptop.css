@@ -1,0 +1,18 @@
+.laptop {
+    z-index: 1;
+    height: 50vh;
+    width: 50vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.laptop .inner-content {
+    z-index: -1;
+    position: relative;
+    left: 17.5%;
+    top: 4vh;
+    width: 65%;
+    height: 22vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
