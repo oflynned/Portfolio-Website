@@ -5,10 +5,31 @@
       "Node.js",
       "React",
       "Android",
+      "Java",
       "API"
     ],
     "title": "GreenFi",
-    "description": "GreenFi is a platform for community loan management in rural communities with the aim of utilitising the idea of eco-credit for environmental restoration."
+    "description": "GreenFi is a platform for community loan management in rural communities with the aim of utilitising the idea of eco-credit for environmental restoration.",
+    "requirements": [
+      "Monitor environmental restoration",
+      "Allow NGOs to monitor and report on financial and environmental impact",
+      "Link communities to wider capacity-building initiatives",
+      "Train communities to manage eco-credit",
+      "Track loan disbursements and repayments"
+    ],
+    "overview": [
+      "GreenFi links community managed loans to environmental restoration with an innovative and effective tool for natural resource management and conservation.",
+      "For NGOs, a new approach cost-effective and verifiable environmental restoration community level that builds financial and social capital.",
+      "For companies which source produce from small scale producers an alternative to CSR projects which support business sustainability while delivering verifiable social, financial, and environmental benefits."
+    ],
+    "showcase": {
+      "mobile": [
+      ],
+      "desktop": [
+        "/terminal.png",
+        "/webstorm.png"
+      ]
+    }
   },
   {
     "disposition": "FREELANCE",
@@ -26,6 +47,7 @@
       "Python",
       "Node.js",
       "Android",
+      "Java",
       "iOS",
       "API"
     ],
@@ -36,6 +58,7 @@
     "disposition": "PERSONAL",
     "tags": [
       "Android",
+      "Java",
       "Python",
       "API"
     ],
@@ -61,7 +84,8 @@
   {
     "disposition": "PERSONAL",
     "tags": [
-      "Android"
+      "Android",
+      "Java"
     ],
     "title": "Irish Nouns",
     "description": "Irish Nouns is an Irish language game app. It gives the user a choice of topic, and presents words for the user to guess the gender while keeping a score."
@@ -70,6 +94,7 @@
     "disposition": "PERSONAL",
     "tags": [
       "Android",
+      "Java",
       "Node.js",
       "API"
     ],
