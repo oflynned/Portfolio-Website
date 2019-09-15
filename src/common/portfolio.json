@@ -1,5 +1,6 @@
 [
   {
+    "title": "GreenFi",
     "disposition": "FREELANCE",
     "tags": [
       "Node.js",
@@ -8,7 +9,7 @@
       "Java",
       "API"
     ],
-    "title": "GreenFi",
+    "url": "https://greenfi.org",
     "description": "GreenFi is a platform for community loan management in rural communities with the aim of utilitising the idea of eco-credit for environmental restoration.",
     "requirements": [
       "Monitor environmental restoration",
@@ -23,23 +24,33 @@
       "For companies which source produce from small scale producers an alternative to CSR projects which support business sustainability while delivering verifiable social, financial, and environmental benefits."
     ],
     "showcase": {
-      "mobile": [
-      ],
+      "mobile": [],
       "desktop": [
-        "/terminal.png",
-        "/webstorm.png"
+        "login.png",
+        "dashboard.png",
+        "overview.png",
+        "add-fund.png",
+        "members-view.png",
+        "detailed-member-view.png"
       ]
     }
   },
   {
+    "title": "Hairdressers Connect",
+    "url": "https://hairdressersconnect.com",
     "disposition": "FREELANCE",
     "tags": [
       "Node.js",
       "React",
       "API"
     ],
-    "title": "Hairdressers Connect",
-    "description": "Hairdressers Connect is a web-app network for stylists. It allows users to connect with one another, create a virtual CV and view portfolio items via Instagram."
+    "description": "Hairdressers Connect is a web-app network for stylists. It allows users to connect with one another, create a virtual CV and view portfolio items via Instagram.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   },
   {
     "disposition": "FREELANCE",
@@ -52,7 +63,13 @@
       "API"
     ],
     "title": "T1Exercise",
-    "description": "T1Exercise is a mobile application for managing diabetes blood sugar levels with exercise recommendations in order to encourage safe and empowering exercise."
+    "description": "T1Exercise is a mobile application for managing diabetes blood sugar levels with exercise recommendations in order to encourage safe and empowering exercise.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   },
   {
     "disposition": "PERSONAL",
@@ -63,7 +80,13 @@
       "API"
     ],
     "title": "Loinnir",
-    "description": "Loinnir is an Irish-language social network. It uses location-based services to match-make users into communities and provide discussion topics"
+    "description": "Loinnir is an Irish-language social network. It uses location-based services to match-make users into communities and provide discussion topics",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   },
   {
     "disposition": "PERSONAL",
@@ -71,7 +94,13 @@
       "React"
     ],
     "title": "Wedder",
-    "description": "Wedder is a small React app to provide updates on a location's weather forecast in a humorous manner using Irish colloquialisms."
+    "description": "Wedder is a small React app to provide updates on a location's weather forecast in a humorous manner using Irish colloquialisms.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   },
   {
     "disposition": "PERSONAL",
@@ -79,7 +108,13 @@
       "React"
     ],
     "title": "Insurance Web App",
-    "description": "This is a simple React desktop-based exercise I had to make for a job interview. It turned out pretty fluid and shows some basic functions for a client."
+    "description": "This is a simple React desktop-based exercise I had to make for a job interview. It turned out pretty fluid and shows some basic functions for a client.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   },
   {
     "disposition": "PERSONAL",
@@ -88,7 +123,13 @@
       "Java"
     ],
     "title": "Irish Nouns",
-    "description": "Irish Nouns is an Irish language game app. It gives the user a choice of topic, and presents words for the user to guess the gender while keeping a score."
+    "description": "Irish Nouns is an Irish language game app. It gives the user a choice of topic, and presents words for the user to guess the gender while keeping a score.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   },
   {
     "disposition": "PERSONAL",
@@ -99,7 +140,13 @@
       "API"
     ],
     "title": "Tearma",
-    "description": "Tearma is an Irish language dictionary app. It was created as a client for a man-in-the-middle service which converts HTML markup to JSON."
+    "description": "Tearma is an Irish language dictionary app. It was created as a client for a man-in-the-middle service which converts HTML markup to JSON.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   },
   {
     "disposition": "PERSONAL",
@@ -107,6 +154,12 @@
       "Python"
     ],
     "title": "Snapchat Filters",
-    "description": "Open-source Git repository to mimic augmented reality filters seen in the popular app Snapchat using OpenCV and image processing techniques."
+    "description": "Open-source Git repository to mimic augmented reality filters seen in the popular app Snapchat using OpenCV and image processing techniques.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
   }
 ]
