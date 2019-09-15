@@ -2,7 +2,6 @@ import React, {Component} from "react";
 
 import "./laptop.css";
 
-// TODO replace with image array
 class Laptop extends Component {
     constructor() {
         super();
@@ -13,9 +12,10 @@ class Laptop extends Component {
     }
 
     componentDidMount() {
+        console.log(this.props);
         this.setState({
             index: 0,
-            images: this.props.images
+            images: this.props.images || []
         }, this.transitionImage());
     }
 
@@ -29,7 +29,7 @@ class Laptop extends Component {
             }
 
             this.transitionImage();
-        }, 3500);
+        }, 5000);
     }
 
     render() {

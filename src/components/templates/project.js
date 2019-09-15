@@ -1,9 +1,9 @@
 import React from "react";
 
 import NavBar from "../nav/NavBar";
+import Laptop from "../layout/laptop";
 
 import "./project.css";
-import Laptop from "../layout/laptop";
 
 const Project = ({pageContext: {project}}) => (
     <div className={"project"}>
@@ -13,7 +13,9 @@ const Project = ({pageContext: {project}}) => (
                 <div className={"content-inner"}>
                     <h1>{project.title}</h1>
                     <p>{project.tags.sort().join(", ")}</p>
+                    {project.url && <a href={project.url} target={"_blank"}>{project.url}</a>}
                     <p>{project.description}</p>
+
                     <p>Project requirements were as follows:</p>
                     <ul>
                         {project.requirements.map(r => <li>{r}</li>)}
@@ -22,8 +24,9 @@ const Project = ({pageContext: {project}}) => (
                     <h2>What is {project.title}?</h2>
                     {project.overview.map(o => <p>{o}</p>)}
 
-                    <h2>Showcase</h2>
-                    <Laptop images={project.showcase.desktop}/>
+                    <Laptop images={project.showcase.desktop.map(
+                        image => `/${project.formattedTitle}/desktop/${image}`
+                    )}/>
                 </div>
             </div>
         </div>
