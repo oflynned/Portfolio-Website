@@ -32,3 +32,12 @@ body .project {
 .project .content .content-inner {
     padding: 32px;
 }
+
+.project .back-link {
+    text-decoration: none;
+    color: black;
+}
+
+.project .back-link:hover {
+    color: #910d0d;
+}
