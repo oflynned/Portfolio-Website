@@ -3,16 +3,19 @@ const projects = require("./src/common/portfolio");
 
 exports.createPages = ({actions}) => {
     const {createPage} = actions;
-    const template = path.resolve(`./src/components/templates/project.js`);
-    return new Promise((resolve, reject) => {
+    const component = path.resolve(`./src/components/templates/project.js`);
+    return new Promise(resolve => {
         projects.forEach(project => {
-            const title = project.title.toLowerCase().replace(/ /g, "-");
+            const formattedTitle = project.title
+                .toLowerCase()
+                .replace(/ /g, "-");
+            const path = `/portfolio/${formattedTitle}`;
             createPage({
-                path: `/portfolio/${title}`,
-                component: template,
+                path,
+                component,
                 context: {
-                    project
-                },
+                    project: Object.assign({}, project, {formattedTitle})
+                }
             })
         });
         resolve();
