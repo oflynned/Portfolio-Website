@@ -41,3 +41,7 @@ body .project {
 .project .back-link:hover {
     color: #910d0d;
 }
+
+.project .laptop {
+    margin: 40px 0;
+}

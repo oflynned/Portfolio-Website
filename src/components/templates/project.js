@@ -23,12 +23,13 @@ const Project = ({pageContext: {project}}) => (
                         {project.requirements.map(r => <li>{r}</li>)}
                     </ul>
 
-                    <h2>What is {project.title}?</h2>
-                    {project.overview.map(o => <p>{o}</p>)}
-
                     <Laptop images={project.showcase.desktop.map(
                         image => `/${project.formattedTitle}/desktop/${image}`
                     )}/>
+
+                    <h2>What is {project.title}?</h2>
+                    {project.overview.map(o => <p>{o}</p>)}
+
                 </div>
             </div>
         </div>
