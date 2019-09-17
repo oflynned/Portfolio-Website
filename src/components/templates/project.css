@@ -42,6 +42,13 @@ body .project {
     color: #910d0d;
 }
 
-.project .laptop {
+.project .laptop,
+.project .android,
+.project .ios {
     margin: 40px 0;
 }
+
+/*.project .android,*/
+/*.project .ios {*/
+/*    text-align: center;*/
+/*}*/

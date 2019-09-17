@@ -3,6 +3,7 @@ import {Link} from "gatsby";
 
 import NavBar from "../nav/NavBar";
 import Laptop from "../layout/laptop";
+import Android from "../layout/android";
 
 import "./project.css";
 
@@ -23,9 +24,19 @@ const Project = ({pageContext: {project}}) => (
                         {project.requirements.map(r => <li>{r}</li>)}
                     </ul>
 
-                    <Laptop images={project.showcase.desktop.map(
-                        image => `/${project.formattedTitle}/desktop/${image}`
-                    )}/>
+                    {
+                        (project.showcase.hasOwnProperty("desktop") && project.showcase.desktop.length > 0) &&
+                        <Laptop images={project.showcase.desktop.map(
+                            image => `/${project.formattedTitle}/desktop/${image}`
+                        )}/>
+                    }
+
+                    {
+                        (project.showcase.hasOwnProperty("android") && project.showcase.android.length > 0) &&
+                        <Android images={project.showcase.android.map(
+                            image => `/${project.formattedTitle}/android/${image}`
+                        )}/>
+                    }
 
                     <h2>What is {project.title}?</h2>
                     {project.overview.map(o => <p>{o}</p>)}
