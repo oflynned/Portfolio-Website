@@ -130,7 +130,10 @@
     ],
     "showcase": {
       "android": [
-        "map.png"
+        "launch-screen.png",
+        "map.png",
+        "locality-chat.png",
+        "roulette.png"
       ]
     }
   }
