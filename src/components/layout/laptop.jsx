@@ -12,7 +12,6 @@ class Laptop extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
         this.setState({
             index: 0,
             images: this.props.images || []
@@ -36,7 +35,7 @@ class Laptop extends Component {
         const {index, images} = this.state;
         return (
             <div className={"laptop"}
-                 style={{backgroundImage: 'url("/macbook-outline-cropped.png")'}}>
+                 style={{backgroundImage: 'url("/macbook-outline.png")'}}>
                 <div className={"inner-content"}
                      style={{backgroundImage: 'url("' + images[index] + '")'}}/>
             </div>

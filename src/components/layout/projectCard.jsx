@@ -2,25 +2,24 @@ import React, {Component} from "react";
 
 import "./projectCard.css";
 
-class ProjectCard extends Component {
-    mapDisposition(disposition) {
-        switch (disposition) {
-            case "PERSONAL":
-            default:
-                return "Personal project";
-            case "FREELANCE":
-                return "Contract project";
-        }
-    }
+const dispositionMap = {
+    "PERSONAL": "Personal project",
+    "FREELANCE": "Contract project"
+};
 
+class ProjectCard extends Component {
     render() {
-        const {onClick, title, description, disposition, tags} = this.props;
+        const {onClick, formattedTitle, title, description, disposition} = this.props;
         return (
             <div onClick={onClick} className={"project-card"}>
-                <div className={"card-image"}/>
+                <div className={"card-image-holder"}>
+                    <div className={"card-image"}>
+                        <img src={`/${formattedTitle}/icon.png`} alt={"project logo"}/>
+                    </div>
+                </div>
                 <div className={"card-content"}>
                     <h3>{title}</h3>
-                    <p>{this.mapDisposition(disposition)}</p>
+                    <p>{dispositionMap[disposition]}</p>
                     <p>{description}</p>
                 </div>
             </div>
