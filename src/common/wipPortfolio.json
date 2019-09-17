@@ -1,0 +1,209 @@
+[
+  {
+    "title": "GreenFi",
+    "disposition": "FREELANCE",
+    "tags": [
+      "Node.js",
+      "React",
+      "Android",
+      "Java",
+      "API"
+    ],
+    "url": "https://greenfi.org",
+    "description": "GreenFi is a platform for community loan management in rural communities with the aim of utilitising the idea of eco-credit for environmental restoration.",
+    "requirements": [
+      "Monitor environmental restoration",
+      "Allow NGOs to monitor and report on financial and environmental impact",
+      "Link communities to wider capacity-building initiatives",
+      "Train communities to manage eco-credit",
+      "Track loan disbursements and repayments"
+    ],
+    "overview": [
+      "GreenFi links community managed loans to environmental restoration with an innovative and effective tool for natural resource management and conservation.",
+      "For NGOs, a new approach cost-effective and verifiable environmental restoration community level that builds financial and social capital.",
+      "For companies which source produce from small scale producers an alternative to CSR projects which support business sustainability while delivering verifiable social, financial, and environmental benefits."
+    ],
+    "showcase": {
+      "android": [],
+      "desktop": [
+        "login.png",
+        "dashboard.png",
+        "overview.png",
+        "add-fund.png",
+        "members-view.png",
+        "detailed-member-view.png"
+      ]
+    }
+  },
+  {
+    "title": "Hairdressers Connect",
+    "url": "https://hairdressersconnect.com",
+    "disposition": "FREELANCE",
+    "tags": [
+      "Node.js",
+      "React",
+      "API"
+    ],
+    "description": "Hairdressers Connect is a web-app network for stylists. It allows users to connect with one another, create a virtual CV and view portfolio items via Instagram.",
+    "requirements": [
+      "Instagram OAuth2 login functionality",
+      "Allow stylists to create a digital resume",
+      "Interconnect users using Instagram hashtags and portfolio feeds",
+      "Provide recruiter-facing search tools"
+    ],
+    "overview": [
+      "The aim of the web-app network is to revolutionise hairdressing employment through a mashup of Instagram and LinkedIn.",
+      "Hairdressers Connect allows you to hone in your hairdressing skills, to sell yourself, and join the growing list of hairdressers to be part of the most influential names in the business."
+    ],
+    "showcase": {
+      "desktop": [
+        "login.png",
+        "feed.png",
+        "resume.png",
+        "add-experience.png",
+        "profile.png"
+      ]
+    }
+  },
+  {
+    "disposition": "FREELANCE",
+    "tags": [
+      "Python",
+      "Node.js",
+      "Android",
+      "Java",
+      "iOS",
+      "API"
+    ],
+    "title": "T1Exercise",
+    "url": "https://t1-exercise.herokuapp.com/information",
+    "description": "T1Exercise is a mobile application for managing diabetes blood sugar levels with exercise recommendations in order to encourage safe and empowering exercise.",
+    "requirements": [
+      "Allow diabetics to keep a log of their exercise routines",
+      "Provide recommendations for before and after exercise routines in accordance with certain data",
+      "Allow users a simple experience for building an exercise routine",
+      "Micro-service based architecture for correlating business use cases",
+      "CSV file export and data generation functions for crunching relevant numbers for clinical trial usage",
+      "FCM notification dispatch for user updates, requesting and notifying of events, and motivating the user dependent on past exercise logs"
+    ],
+    "overview": [
+      "T1Exercise is an app for diabetics to get you advice and support on how to manage blood glucose around exercise, while avoiding the ‘highs’ and ‘lows’ of exercise.",
+      "This suggestions and information is largely based on a recent Exercise management in type 1 diabetes consensus statement by Riddell et al (Lancet Diabetes and Endo) 2016",
+      "The app is generally meant to be used to keep a log of exercise, blood glucose, carbohydrate and insulin amounts. This can be reviewed by you and also in conjunction with your diabetes team to help pinpoint where the issues (if any) arise in order to improve your blood glucose around exercise."
+    ],
+    "showcase": {
+      "android": [
+        "login.png",
+        "grouped-exercises.png",
+        "sport-log.png",
+        "detailed-exercise-view.png",
+        "exercise-builder-introduction.png",
+        "choose-exercise.png",
+        "exercise-planning.png",
+        "exercise-detail.png",
+        "exercise-review.png"
+      ],
+      "ios": [],
+      "desktop": []
+    }
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Android",
+      "Java",
+      "Python",
+      "API"
+    ],
+    "title": "Loinnir",
+    "description": "Loinnir is an Irish-language social network. It uses location-based services to match-make users into communities and provide discussion topics",
+    "requirements": [
+      "Allow users to create a digital Gaeltacht (Irish speaking region) by using GPS coordinates to allocate members to the nearest town",
+      "Allow matchmaking-based roulette in order to connect members to one another for one-on-one conversation",
+      "Facilitate group location-based group chats so that members can communicate with other nearby Irish speakers",
+      "Show anonymous coarse user coordinates on a map to create a heatmap of membership",
+      "Create user accounts through the Facebook SDK via OAuth 2"
+    ],
+    "overview": [
+      "Loinnir is the first"
+    ],
+    "showcase": {
+      "android": [],
+      "desktop": []
+    }
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "React"
+    ],
+    "title": "Wedder",
+    "description": "Wedder is a small React app to provide updates on a location's weather forecast in a humorous manner using Irish colloquialisms.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "React"
+    ],
+    "title": "Insurance Web App",
+    "description": "This is a simple React desktop-based exercise I had to make for a job interview. It turned out pretty fluid and shows some basic functions for a client.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Android",
+      "Java"
+    ],
+    "title": "Irish Nouns",
+    "description": "Irish Nouns is an Irish language game app. It gives the user a choice of topic, and presents words for the user to guess the gender while keeping a score.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Android",
+      "Java",
+      "Node.js",
+      "API"
+    ],
+    "title": "Tearma",
+    "description": "Tearma is an Irish language dictionary app. It was created as a client for a man-in-the-middle service which converts HTML markup to JSON.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
+  },
+  {
+    "disposition": "PERSONAL",
+    "tags": [
+      "Python"
+    ],
+    "title": "Snapchat Filters",
+    "description": "Open-source Git repository to mimic augmented reality filters seen in the popular app Snapchat using OpenCV and image processing techniques.",
+    "requirements": [],
+    "overview": [],
+    "showcase": {
+      "mobile": [],
+      "desktop": []
+    }
+  }
+]
