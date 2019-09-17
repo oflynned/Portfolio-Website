@@ -73,7 +73,7 @@ class Index extends Component {
                             </div>
 
                             <h2>Technologies Overview</h2>
-                            <div className={"grid"}>
+                            <div className={"grid competencies"}>
                                 {
                                     overview.map(({title, description, icons}) =>
                                         <div className={"col"}>

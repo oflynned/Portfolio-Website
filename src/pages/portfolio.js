@@ -97,14 +97,22 @@ class Portfolio extends Component {
                                 <FlipMove className={"grid"}>
                                     {
                                         filteredProjects.map(
-                                            ({title, description, tags, disposition}) =>
-                                                <ProjectCard
-                                                    onClick={() => navigate(`/portfolio/${title.toLowerCase().replace(/ /g, "-")}`)}
-                                                    key={title}
-                                                    title={title}
-                                                    description={description}
-                                                    tags={tags}
-                                                    disposition={disposition}/>
+                                            ({title, description, tags, disposition}) => {
+                                                const formattedTitle = title
+                                                    .toLowerCase()
+                                                    .replace(/ /g, "-");
+                                                const destination = `/portfolio/${formattedTitle}`;
+                                                return (
+                                                    <ProjectCard
+                                                        onClick={() => navigate(destination)}
+                                                        key={title}
+                                                        title={title}
+                                                        formattedTitle={formattedTitle}
+                                                        description={description}
+                                                        tags={tags}
+                                                        disposition={disposition}/>
+                                                )
+                                            }
                                         )
                                     }
                                 </FlipMove>
