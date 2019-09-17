@@ -79,17 +79,36 @@
     "url": "https://t1-exercise.herokuapp.com/information",
     "description": "T1Exercise is a mobile application for managing diabetes blood sugar levels with exercise recommendations in order to encourage safe and empowering exercise.",
     "requirements": [
-      "Allow diabetics to keep a log of their exercise routines"
+      "Allow diabetics to keep a log of their exercise routines",
+      "Provide recommendations for before and after exercise routines in accordance with certain data",
+      "Allow users a simple experience for building an exercise routine",
+      "Micro-service based architecture for correlating business use cases",
+      "CSV file export and data generation functions for crunching relevant numbers for clinical trial usage",
+      "FCM notification dispatch for user updates, requesting and notifying of events, and motivating the user dependent on past exercise logs"
     ],
-    "overview": [],
+    "overview": [
+      "T1Exercise is an app for diabetics to get you advice and support on how to manage blood glucose around exercise, while avoiding the ‘highs’ and ‘lows’ of exercise.",
+      "This suggestions and information is largely based on a recent Exercise management in type 1 diabetes consensus statement by Riddell et al (Lancet Diabetes and Endo) 2016",
+      "The app is generally meant to be used to keep a log of exercise, blood glucose, carbohydrate and insulin amounts. This can be reviewed by you and also in conjunction with your diabetes team to help pinpoint where the issues (if any) arise in order to improve your blood glucose around exercise."
+    ],
     "showcase": {
-      "android": [],
-      "ios": [],
-      "desktop": []
+      "android": [
+        "login.png",
+        "grouped-exercises.png",
+        "sport-log.png",
+        "detailed-exercise-view.png",
+        "exercise-builder-introduction.png",
+        "choose-exercise.png",
+        "exercise-planning.png",
+        "exercise-detail.png",
+        "exercise-review.png"
+      ],
+      "ios": []
     }
   },
   {
     "disposition": "PERSONAL",
+    "url": "https://loinnir.syzible.com",
     "tags": [
       "Android",
       "Java",
@@ -98,85 +117,21 @@
     ],
     "title": "Loinnir",
     "description": "Loinnir is an Irish-language social network. It uses location-based services to match-make users into communities and provide discussion topics",
-    "requirements": [],
-    "overview": [],
-    "showcase": {
-      "android": [],
-      "desktop": []
-    }
-  },
-  {
-    "disposition": "PERSONAL",
-    "tags": [
-      "React"
+    "requirements": [
+      "Allow users to create a digital Gaeltacht (Irish speaking region) by using GPS coordinates to allocate members to the nearest town",
+      "Allow matchmaking-based roulette in order to connect members to one another for one-on-one conversation",
+      "Facilitate group location-based group chats so that members can communicate with other nearby Irish speakers",
+      "Show anonymous coarse user coordinates on a map to create a heatmap of membership",
+      "Create user accounts through the Facebook SDK via OAuth 2"
     ],
-    "title": "Wedder",
-    "description": "Wedder is a small React app to provide updates on a location's weather forecast in a humorous manner using Irish colloquialisms.",
-    "requirements": [],
-    "overview": [],
-    "showcase": {
-      "mobile": [],
-      "desktop": []
-    }
-  },
-  {
-    "disposition": "PERSONAL",
-    "tags": [
-      "React"
+    "overview": [
+      "Loinnir is a social network for the Irish speaking community. Users, like you, can connect with others through roulette matching, or discover the Irish-speaking community around you by using the location based chatroom from your current location.",
+      "The app is an amenity to be used by all, regardless of whether you're a true Gaeilgeoir, or having just started learning the language. Making mistakes isn't a bad thing as long as you're making an effort to express yourself through Irish. Do your best and keep it Gaelic."
     ],
-    "title": "Insurance Web App",
-    "description": "This is a simple React desktop-based exercise I had to make for a job interview. It turned out pretty fluid and shows some basic functions for a client.",
-    "requirements": [],
-    "overview": [],
     "showcase": {
-      "mobile": [],
-      "desktop": []
-    }
-  },
-  {
-    "disposition": "PERSONAL",
-    "tags": [
-      "Android",
-      "Java"
-    ],
-    "title": "Irish Nouns",
-    "description": "Irish Nouns is an Irish language game app. It gives the user a choice of topic, and presents words for the user to guess the gender while keeping a score.",
-    "requirements": [],
-    "overview": [],
-    "showcase": {
-      "mobile": [],
-      "desktop": []
-    }
-  },
-  {
-    "disposition": "PERSONAL",
-    "tags": [
-      "Android",
-      "Java",
-      "Node.js",
-      "API"
-    ],
-    "title": "Tearma",
-    "description": "Tearma is an Irish language dictionary app. It was created as a client for a man-in-the-middle service which converts HTML markup to JSON.",
-    "requirements": [],
-    "overview": [],
-    "showcase": {
-      "mobile": [],
-      "desktop": []
-    }
-  },
-  {
-    "disposition": "PERSONAL",
-    "tags": [
-      "Python"
-    ],
-    "title": "Snapchat Filters",
-    "description": "Open-source Git repository to mimic augmented reality filters seen in the popular app Snapchat using OpenCV and image processing techniques.",
-    "requirements": [],
-    "overview": [],
-    "showcase": {
-      "mobile": [],
-      "desktop": []
+      "android": [
+        "map.png"
+      ]
     }
   }
 ]
