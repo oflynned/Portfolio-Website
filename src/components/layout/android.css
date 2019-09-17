@@ -1,3 +1,18 @@
 .android {
+    z-index: 1;
+    height: 50vh;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.android .inner-content {
+    z-index: -1;
+    position: relative;
+    left: 1.25%;
+    top: 3vh;
+    width: 75%;
+    height: 23.75vw;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
