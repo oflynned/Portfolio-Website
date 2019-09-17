@@ -24,7 +24,7 @@
       "For companies which source produce from small scale producers an alternative to CSR projects which support business sustainability while delivering verifiable social, financial, and environmental benefits."
     ],
     "showcase": {
-      "mobile": [],
+      "android": [],
       "desktop": [
         "login.png",
         "dashboard.png",
@@ -45,11 +45,24 @@
       "API"
     ],
     "description": "Hairdressers Connect is a web-app network for stylists. It allows users to connect with one another, create a virtual CV and view portfolio items via Instagram.",
-    "requirements": [],
-    "overview": [],
+    "requirements": [
+      "Instagram OAuth2 login functionality",
+      "Allow stylists to create a digital resume",
+      "Interconnect users using Instagram hashtags and portfolio feeds",
+      "Provide recruiter-facing search tools"
+    ],
+    "overview": [
+      "The aim of the web-app network is to revolutionise hairdressing employment through a mashup of Instagram and LinkedIn.",
+      "Hairdressers Connect allows you to hone in your hairdressing skills, to sell yourself, and join the growing list of hairdressers to be part of the most influential names in the business."
+    ],
     "showcase": {
-      "mobile": [],
-      "desktop": []
+      "desktop": [
+        "login.png",
+        "feed.png",
+        "resume.png",
+        "add-experience.png",
+        "profile.png"
+      ]
     }
   },
   {
@@ -63,11 +76,15 @@
       "API"
     ],
     "title": "T1Exercise",
+    "url": "https://t1-exercise.herokuapp.com/information",
     "description": "T1Exercise is a mobile application for managing diabetes blood sugar levels with exercise recommendations in order to encourage safe and empowering exercise.",
-    "requirements": [],
+    "requirements": [
+      "Allow diabetics to keep a log of their exercise routines"
+    ],
     "overview": [],
     "showcase": {
-      "mobile": [],
+      "android": [],
+      "ios": [],
       "desktop": []
     }
   },
@@ -84,7 +101,7 @@
     "requirements": [],
     "overview": [],
     "showcase": {
-      "mobile": [],
+      "android": [],
       "desktop": []
     }
   },
