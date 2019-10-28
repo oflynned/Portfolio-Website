@@ -41,7 +41,7 @@ class Contact extends Component {
                     <title>Edmond O'Flynn | Software Engineer</title>/>
                 </Helmet>
 
-                <NavBar selectedIndex={3}/>
+                <NavBar selectedIndex={5}/>
 
                 <div className={"content"}>
                     <div className={"offset-page-content"}>

@@ -12,6 +12,14 @@ const headings = [
         link: "/cv.pdf"
     },
     {
+        title: "Research Project",
+        link: "/snapchat-filters.pdf"
+    },
+    {
+        title: "University Thesis",
+        link: "/thesis.pdf"
+    },
+    {
         title: "Contact Me",
         link: "/contact"
     }

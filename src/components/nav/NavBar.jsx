@@ -36,6 +36,6 @@ const NavBar = ({selectedIndex}) =>
             <div className={"social-links"}>
             </div>
         </div>
-    </div>
+    </div>;
 
 export default NavBar
