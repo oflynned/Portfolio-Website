@@ -1,0 +1,20 @@
+{
+  "nav__jobTitle": "Full-Stack Developer",
+  "nav__aboutMe": "F",
+  "nav__myPortfolio": "My Portfolio",
+  "nav__myCV": "My CV",
+  "nav__researchProject": "Research Project",
+  "nav__universityThesis": "University Thesis",
+  "nav__contactMe": "Contact me",
+
+  "index__greeting": "Hi there, I'm Ed",
+  "index__iAm": "I'm ",
+  "index__aFullstackEngineer": "a full-stack engineer.",
+  "index__aReactDeveloper": "a React developer.",
+  "index__aNodejsDeveloper": "a Node.js developer.",
+  "index__anAndroidDeveloper": "an Android developer.",
+  "index__intro1": "I've been working as a software engineer since 2015.",
+  "index__intro2": "I have maintained, developed, and launched multiple projects from scratch.",
+  "index__intro3": "I am specialised in both frontend and backend development with complex, scalable web applications.",
+  "index__intro4": "I work mainly with Javascript with frameworks such as React.js and Node.js, but also have extensive experience with Ruby, Java and Python."
+}

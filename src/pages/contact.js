@@ -47,8 +47,7 @@ class Contact extends Component {
                     <div className={"offset-page-content"}>
                         <div className={"content-inner"}>
                             <h1>Contact me</h1>
-                            <p>I am available for hire both on an employee and contractor basis. Feel free to reach out
-                                if you have any ideas for how we could work together.</p>
+                            <p>I am available for hire on a contractor basis for projects. Feel free to reach out if you have any ideas for how we could work together.</p>
 
                             <table>
                                 {

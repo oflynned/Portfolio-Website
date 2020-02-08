@@ -1,26 +1,26 @@
 const headings = [
     {
-        title: "About Me",
+        title: "nav__aboutMe",
         link: "/"
     },
     {
-        title: "My Portfolio",
+        title: "nav__myPortfolio",
         link: "/portfolio"
     },
     {
-        title: "My CV",
+        title: "nav__myCV",
         link: "/cv.pdf"
     },
     {
-        title: "Research Project",
+        title: "nav__researchProject",
         link: "/snapchat-filters.pdf"
     },
     {
-        title: "University Thesis",
+        title: "nav__universityThesis",
         link: "/thesis.pdf"
     },
     {
-        title: "Contact Me",
+        title: "nav__contactMe",
         link: "/contact"
     }
 ];

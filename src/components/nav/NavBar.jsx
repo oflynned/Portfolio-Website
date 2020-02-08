@@ -1,11 +1,12 @@
 import React from "react"
 import {Link} from "gatsby";
+import {injectIntl} from "gatsby-plugin-intl"
 
 import headings from "../../common/navHeadings";
 
 import "./navBar.css"
 
-const NavBar = ({selectedIndex}) =>
+const NavBar = ({intl, selectedIndex}) =>
     <div className={"nav-bar"}>
         <div className={"nav-content"}>
             <div className={"avatar"}>
@@ -14,28 +15,34 @@ const NavBar = ({selectedIndex}) =>
 
             <div className={"person-details"}>
                 <h1><strong>Edmond O'Flynn</strong></h1>
-                <h2>Full-Stack Developer</h2>
+                <h2>{intl.formatMessage({id: "nav__jobTitle"})}</h2>
             </div>
 
             <div className={"nav-links"}>
                 <ul>
                     {
-                        headings.map(({title, link}, index) =>
-                            <li key={index} className={selectedIndex === index ? "selected" : "unselected"}>
-                                {
-                                    link.match(/pdf/) === null ?
-                                        <Link to={link}>{title}{selectedIndex === index ? " >" : ""}</Link> :
-                                        <a href={link} target={"_blank"}>{title}</a>
-                                }
-                            </li>
+                        headings.map(({title, link}, index) => {
+                                const formattedTitle = intl.formatMessage({id: title});
+                                return <li key={index} className={selectedIndex === index ? "selected" : "unselected"}>
+                                    {
+                                        link.match(/pdf/) === null ?
+                                            <Link to={link}>
+                                                {formattedTitle}{selectedIndex === index ? " >" : ""}
+                                            </Link> :
+                                            <a href={link} target={"_blank"}>
+                                                {formattedTitle}
+                                            </a>
+                                    }
+                                </li>
+                            }
                         )
                     }
                 </ul>
             </div>
 
-            <div className={"social-links"}>
+            <div className={"language-choice"}>
             </div>
         </div>
     </div>;
 
-export default NavBar
+export default injectIntl(NavBar);

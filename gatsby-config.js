@@ -20,6 +20,15 @@ module.exports = {
                 logo: "./src/assets/images/favicon.png",
             },
         },
-        "gatsby-plugin-react-helmet",
+        {
+            resolve: "gatsby-plugin-intl",
+            options: {
+                path: `${__dirname}/src/intl`,
+                languages: ["en"],
+                defaultLanguage: "en",
+                redirect: true,
+            }
+        },
+        "gatsby-plugin-react-helmet"
     ]
 };
