@@ -12,6 +12,7 @@ import Card from "../components/layout/card";
 
 const jobTitles = [
     "a full-stack engineer.",
+    "a TypeScript developer.",
     "a React developer.",
     "a Node.js developer.",
     "an Android developer."
